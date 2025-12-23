@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개서</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px auto;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: #667eea;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+        }
+
+        .section ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            font-size: 1.1em;
+        }
+
+        .info-item strong {
+            color: #667eea;
+            margin-right: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1em;
+        }
+
+        .contact-item strong {
+            color: #667eea;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-img">
+                <img src="profile_photo.jpg" alt="증명사진" onerror="this.style.display='none'; this.parentElement.innerHTML='👤';">
+            </div>
+            <h1>노정우</h1>
+            <p>동명대학교 게임공학과 | 삼성전자 지원</p>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>기본 정보</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>생년월일:</strong> 2009년 4월 4일
+                    </div>
+                    <div class="info-item">
+                        <strong>학번:</strong> 23120052
+                    </div>
+                    <div class="info-item">
+                        <strong>주소:</strong> 부산광역시 수영구 남천동 3-15 209호
+                    </div>
+                    <div class="info-item">
+                        <strong>전화번호:</strong> 010-3430-5142
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>💡 지원 동기</h2>
+                <p>
+                    동명대학교 게임공학과에서 쌓은 소프트웨어 개발 역량과 창의적 문제 해결 능력을 바탕으로, 
+                    세계 최고 수준의 기술력을 보유한 삼성전자에서 성장하고 싶습니다. 
+                    혁신을 선도하는 환경에서 실무를 통해 더욱 발전하며, 미래 기술 개발에 기여하고자 지원했습니다.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>🎓 학력 사항</h2>
+                <ul>
+                    <li><strong>초등학교 졸업 검정고시:</strong> 2021년 4월</li>
+                    <li><strong>중학교 졸업 검정고시:</strong> 2022년 4월</li>
+                    <li><strong>고등학교 졸업 검정고시:</strong> 2022년 8월</li>
+                    <li><strong>동명대학교 게임공학과 입학:</strong> 2023년</li>
+                    <li><strong>졸업예정:</strong> 2026년 2월</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>💪 강점 및 역량</h2>
+                <p>
+                    수학적 사고를 바탕으로 논리적인 문제 해결에 강하며, 주어진 업무에 끝까지 몰입해 성과를 내는 
+                    집중력과 책임감을 갖추고 있습니다. 원활한 협업을 위해 대인관계 능력도 지속적으로 개선 중이며, 
+                    꾸준한 자기계발로 실무 역량을 키워가고 있습니다.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>📊 업무 관련 경험 및 성과</h2>
+                <ul>
+                    <li><strong>e-Test Professionals 워드 1등급</strong> 취득일: 2023년 7월 21일</li>
+                    <li><strong>e-Test Professionals 엑셀 1등급</strong> 취득일: 2024년 1월 23일</li>
+                    <li><strong>YBM TOEIC 평가</strong> 760점: 2023년 12월</li>
+                    <li><strong>현재 취득 학점</strong> (2학년 2학기 기준): 79학점, 4.15 평점</li>
+                </ul>
+                <p style="margin-top: 15px;">
+                    e-Test Professionals 워드·엑셀 1등급과 TOEIC 760점을 통해 문서 작성 및 데이터 처리 능력, 
+                    글로벌 커뮤니케이션 역량을 갖췄습니다. 평균 평점 4.15로 전공에 대한 높은 이해도를 증명했으며, 
+                    체계적인 학습과 자기계발을 통해 실무에 바로 투입 가능한 준비된 인재입니다.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>🚀 입사 후 포부</h2>
+                <p>
+                    입사 후에는 동명대학교 게임공학과에서 갈고닦은 소프트웨어 개발 능력과 논리적인 문제 해결 역량을 바탕으로, 
+                    삼성전자의 핵심 기술 개발에 기여하고자 합니다. 특히 빠르게 변화하는 기술 환경 속에서 새로운 언어나 도구를 
+                    익히는 데에 적극적이며, 다양한 실무 경험을 통해 전문성을 심화시킬 계획입니다.
+                </p>
+                <p>
+                    또한, e-Test Professionals 워드·엑셀 1등급, TOEIC 760점 등을 통해 증명된 문서 처리 능력과 
+                    글로벌 커뮤니케이션 역량을 바탕으로, 팀 내에서 원활한 협업과 소통이 가능하도록 지속적으로 역량을 개발하겠습니다. 
+                    개인적으로는 끈기와 집중력을 바탕으로 주어진 과업을 끝까지 완수하는 자세를 유지하며, 대인관계 능력 또한 
+                    적극적으로 개선해 팀워크 중심의 조직 문화에 빠르게 적응할 것입니다.
+                </p>
+                <p>
+                    궁극적으로는 기술적 전문성과 협업 능력을 겸비한 인재로 성장하여, 삼성전자가 글로벌 시장에서 기술 혁신을 
+                    이끌어가는 데 실질적인 기여를 하고 싶습니다.
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 노정우. 모든 권리 보유.</p>
+        </footer>
+    </div>
+</body>
+</html>
